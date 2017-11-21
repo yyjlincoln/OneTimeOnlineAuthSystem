@@ -2,6 +2,7 @@
 有点像序列号服务器，基于flask，对Get方式提交的序列号(密码)进行验证，并对已验证序列号进行作废处理(练手项目)
 
 需要的库:
+
         flask (Server)
 
         -自动安装 Jinja2
@@ -30,12 +31,12 @@
 
 返回格式: 
 
-{
+        {
 
-Succeed=true/false/used/server_error #验证状态
+        Succeed=true/false/used/server_error #验证状态
 
-Remaining=1/2/3/... #剩余可使用次数 *不一定有
+        Remaining=1/2/3/... #剩余可使用次数 *不一定有
 
-Used=1/2/3/... #使用了多少次 *不一定有
+        Used=1/2/3/... #使用了多少次 *不一定有
 
-}
+        }
